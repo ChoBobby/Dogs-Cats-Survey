@@ -3,18 +3,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Survey Form</title>
+    <title>Dogs vs Cats Survey Form</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Dogs vs Cats Survey Form</h1>
     <p id="description">Please fill out this short survey on dogs vs cats.</p>
+    <!--Survey fieldsets inside this form-->
     <form id="survey-form">
+      <!--Required fieldset that user inputs name, email, age-->
       <fieldset>
         <legend>Required Field</legend>
         <label id="name-label">Full Name: <input id="name" name="name" type="text" placeholder="Name" required/></label>
         <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="Email" required/></label>
         <label id="number-label">Your Age: <input id="age" name="age" type="number" placeholder="13+" pattern="[0-9]+" min="13" max="120" required/></label>
+        <!--Required select dropdown that has two options (dogs or cats)-->
         <label for="dropdown">Dogs or Cats? 
           <select id="dropdown" name="dropdown" required>
             <option value="">(select one)</option>
@@ -23,11 +26,13 @@
           </select>
         </label>
       </fieldset>
+      <!--Fieldset using radio inputs for user to select if they own the pet or not-->
       <fieldset>
         <legend>Do you own the selected pet?</legend>
         <label for="yes-pet"><input value="1" id="yes-pet" type="radio" name="has-pet" class="inline"/> I own the selected pet.</label>
         <label for="no-pet"><input value="2" id="no-pet" type="radio" name="has-pet" class="inline"/> I do not own the selected pet.</label>
       </fieldset>
+      <!--Fieldset using checkbox inputs for user to describe their dog's personality-->
       <fieldset>
         <legend>Pet's personality? (if applicable)</legend>
         <label for="outdoor"><input id="outdoor" type="checkbox" name="personality" value="outdoor" class="inline"> Outdoor</label>
@@ -35,9 +40,11 @@
         <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic" class="inline"> Energetic</label>
         <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy" class="inline"> Lazy</label>
       </fieldset>
+      <!--Optional textarea for user to describe why they love their pet-->
       <label for="textarea">Why do you love your pet? (optional):
         <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="I love my pet because..."></textarea>
       </label>
+      <!--Submit button-->
       <input id="submit" type="submit" value="Submit"/>
     </form>
   <body>
