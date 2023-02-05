@@ -1,3 +1,4 @@
+/*Webpage design*/
 body {
     width: 100%;
     height: 100vh;
@@ -8,11 +9,13 @@ body {
     font-size: 16px;
 }
 
+/*Centers title and description of survey*/
 h1, p {
     margin: 1em auto;
     text-align: center;
 }
 
+/*Survey section width, margins, padding*/
 form {
     width: 60vw;
     max-width: 500px;
@@ -21,39 +24,45 @@ form {
     padding-bottom: 2em;
 }
 
+/*Top border for fieldset legends*/
 fieldset {
     border: none;
     padding: 1rem 0;
     border-top: 3px solid #3b3b4f;
 }
-  
+
 label {
     display: block;
     margin: 0.5rem 0;
 }
 
+/*User inputs text color*/
 input {
     color: #000000;
 }
-  
+
+/*Survey input boxes' sizing*/
 input, textarea, select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
 }
-  
+
+/*Survey input boxes' design*/
 input, textarea {
     background-color: #ffffff;
     border: 2px solid #3b3b4f;
     color: #3b3b4f;
 }
-  
+
+/*Puts radio/checkbox inputs in same line as correlating labels*/
 .inline {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
-  
+
+/*Submit button design*/
 input[type="submit"] {
     display: block;
     width: 60%;
